@@ -3,8 +3,6 @@
   const qsa = (s, root = document) => [...root.querySelectorAll(s)];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const heroVideo = qs('#heroVideo');
-  const storyVideo = qs('#storyVideo');
-  const storyModal = qs('#storyModal');
   const contactModal = qs('#contactModal');
   const mobileToggle = qs('.mobile-toggle');
   const mobileMenu = qs('#mobile-menu');
@@ -55,16 +53,6 @@
     mobileToggle.setAttribute('aria-expanded', 'false'); mobileMenu.hidden = true;
     document.body.classList.remove('nav-open');
   }));
-
-  // Video dialog reuses the actual local MP4 asset.
-  qs('#watch-story').addEventListener('click', () => {
-    heroVideo.pause(); storyModal.showModal();
-    if (!reducedMotion) storyVideo.play().catch(() => {});
-  });
-  const closeStory = () => {storyVideo.pause(); storyVideo.currentTime = 0; storyModal.close();};
-  qs('#close-story').addEventListener('click', closeStory);
-  storyModal.addEventListener('click', e => {if (e.target === storyModal) closeStory();});
-  storyModal.addEventListener('close', () => {storyVideo.pause();});
 
   const closeContact = () => contactModal.close();
   qs('#open-contact').addEventListener('click', () => contactModal.showModal());
