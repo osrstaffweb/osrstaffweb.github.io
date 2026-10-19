@@ -1,0 +1,66 @@
+/* The site's two brand colors, with white as the neutral surface. */
+:root {
+  --brand-navy: #052E54;
+  --brand-cyan: #0093B8;
+  --deep: var(--brand-navy);
+  --navy: var(--brand-navy);
+  --brand: var(--brand-navy);
+  --blue: var(--brand-cyan);
+  --cyan: var(--brand-cyan);
+  --mint: var(--brand-cyan);
+  --text: var(--brand-navy);
+  --muted: var(--brand-navy);
+  --ice: color-mix(in srgb, var(--brand-cyan) 6%, white);
+  --line: color-mix(in srgb, var(--brand-cyan) 20%, white);
+}
+/* Shared action buttons, including legacy service and account controls. */
+:is(.btn, .product-button, .brand-visit-btn, .nav-signin,
+    .demo-actions .action, .auth-panel button, .help-search button,
+    .help-empty button, .help-filters button, .demo-tabs a) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 13px 22px !important;
+  border: 1px solid var(--brand-navy) !important;
+  border-radius: 10px !important;
+  background: var(--brand-navy) !important;
+  color: white !important;
+  font-family: inherit;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: background .2s, border-color .2s, transform .2s;
+}
+:is(.btn, .product-button, .brand-visit-btn, .nav-signin,
+    .demo-actions .action, .auth-panel button, .help-search button,
+    .help-empty button, .help-filters button, .demo-tabs a):hover {
+  background: var(--brand-navy) !important;
+  border-color: var(--brand-cyan) !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+:is(.auth-panel .secondary, .help-filters button:not(.is-active), .demo-tabs a:not(.active)) {
+  background: white !important;
+  color: var(--brand-navy) !important;
+}
+:is(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--brand-cyan) !important;
+  outline-offset: 4px;
+}
+:is(button, .btn, .product-button):disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.btn, .product-button, .brand-visit-btn, .nav-signin, button) {
+    transition: none !important;
+    transform: none !important;
+  }
+}

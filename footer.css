@@ -1,16 +1,16 @@
 /* Shared footer across company, service and account pages. */
-.osr-footer{background:#062c46;color:#fff;padding:60px 0 24px;margin:0;font-family:Inter,Arial,sans-serif}
+.osr-footer{background:#052E54;color:#FFFFFF;padding:60px 0 24px;margin:0;font-family:Inter,Arial,sans-serif}
 .osr-footer-grid{display:grid;grid-template-columns:1.5fr 1.2fr 1fr 1fr;gap:40px;padding-bottom:40px}
-.osr-footer-logo{display:flex;align-items:center;gap:18px;width:fit-content;font-size:49px;line-height:1;font-weight:800;letter-spacing:-.06em;color:#fff;text-decoration:none}
-.osr-footer-logo>span{color:#52d6d1;margin-left:-17px}
-.osr-footer-logo small{border-left:1px solid #ffffff40;padding-left:18px;font-size:10px;line-height:1.5;letter-spacing:.12em}
-.osr-footer p{color:#b7cedc;font-size:13px;line-height:1.8;margin:20px 0 0;max-width:290px}
-.osr-footer h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;line-height:1.5;margin:3px 0 18px;color:#fff}
-.osr-footer nav a{display:block;width:fit-content;font-size:13px;line-height:1.7;margin:0 0 11px;color:#d3e4ed;text-decoration:none}
-.osr-footer a:hover{color:#75e4df;text-decoration:underline;text-underline-offset:4px}
-.osr-footer a:focus-visible{outline:2px solid #75e4df;outline-offset:5px}
-.osr-footer-bottom{border-top:1px solid #ffffff24;padding-top:22px;display:flex;justify-content:space-between;gap:20px;align-items:center;color:#b7cedc}
-.osr-footer-bottom small,.osr-footer-bottom a{font-size:11px;line-height:1.7}.osr-footer-bottom a{color:#d3e4ed}
+.osr-footer-logo{display:flex;align-items:center;gap:18px;width:fit-content;font-size:49px;line-height:1;font-weight:800;letter-spacing:-.06em;color:#FFFFFF;text-decoration:none}
+.osr-footer-logo>span{color:#0093B8;margin-left:-17px}
+.osr-footer-logo small{border-left:1px solid #FFFFFF40;padding-left:18px;font-size:10px;line-height:1.5;letter-spacing:.12em}
+.osr-footer p{color:color-mix(in srgb, #0093B8 26%, #FFFFFF);font-size:13px;line-height:1.8;margin:20px 0 0;max-width:290px}
+.osr-footer h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;line-height:1.5;margin:3px 0 18px;color:#FFFFFF}
+.osr-footer nav a{display:block;width:fit-content;font-size:13px;line-height:1.7;margin:0 0 11px;color:color-mix(in srgb, #0093B8 15%, #FFFFFF);text-decoration:none}
+.osr-footer a:hover{color:#0093B8;text-decoration:underline;text-underline-offset:4px}
+.osr-footer a:focus-visible{outline:2px solid #0093B8;outline-offset:5px}
+.osr-footer-bottom{border-top:1px solid #FFFFFF24;padding-top:22px;display:flex;justify-content:space-between;gap:20px;align-items:center;color:color-mix(in srgb, #0093B8 26%, #FFFFFF)}
+.osr-footer-bottom small,.osr-footer-bottom a{font-size:11px;line-height:1.7}.osr-footer-bottom a{color:color-mix(in srgb, #0093B8 15%, #FFFFFF)}
 #backlinks{scroll-margin-top:110px}
 @media(max-width:950px){.osr-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}}
 @media(max-width:550px){.osr-footer{padding-top:40px}.osr-footer-grid{gap:28px 20px}.osr-footer-brand{grid-column:1/-1}.osr-footer-bottom{flex-direction:column;align-items:flex-start;gap:12px}.osr-footer nav a{padding:3px 0;overflow-wrap:anywhere}}
